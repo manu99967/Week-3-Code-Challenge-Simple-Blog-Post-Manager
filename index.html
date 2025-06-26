@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ke254 Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>254 Blog</h1>
+  <p>A simple blogging platform for sharing ideas</p>
+
+  <div class="container">
+    <div class="posts-section">
+      <h2>All Posts</h2>
+      <div id="post-list" class="post-list"></div>
+    </div>
+
+    <div class="detail-section">
+      <h2>Post Details</h2>
+      <div id="post-detail" class="post-detail"></div>
+    </div>
+  </div>
+
+  <div class="new-post">
+    <h2>Create New Post</h2>
+    <form id="new-post-form">
+      <input type="text" id="post-title" placeholder="Post Title" required>
+      <textarea id="post-content" placeholder="Post Content" required></textarea>
+      <input type="text" id="post-author" placeholder="Your Name" required>
+      <button type="submit">Publish Post</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

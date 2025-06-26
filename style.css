@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Post List Section */
+#post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto 30px;
+}
+
+#post-list div {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#post-list div:hover {
+  background-color: #f0f0f0;
+}
+
+/* Post Detail Section */
+#post-detail {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+#post-detail h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+#post-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+/* New Post Form */
+#new-post-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+#new-post-form label {
+  font-weight: bold;
+  margin-top: 15px;
+  display: block;
+}
+
+#new-post-form input,
+#new-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+}
+
+#new-post-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#new-post-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  #post-list,
+  #post-detail,
+  #new-post-form {
+    max-width: 95%;
+    padding: 15px;
+  }
+}
